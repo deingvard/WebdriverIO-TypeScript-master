@@ -12,18 +12,18 @@ export class LoginSteps {
 	}
 
 	/**
-	 * Enter data on the Herokuapp page
-	 */
-	public enterLoginForm(login, password) {
-		this.loginPage.enterUserName(login);
-		this.loginPage.enterPassword(password);
-	}
-
-	/**
 	 * Navigate to Herokuapp direct site
 	 */
 	public navigateToHerokuappDirect() {
 		browser.maximizeWindow();
 		browser.url('/login');
+	}
+
+	/**
+	 * Enter data on the Herokuapp page
+	 */
+	public enterLoginForm(login, password) {
+		this.loginPage.enterUserName(login);
+		this.loginPage.enterPassword(password);
 	}
 }
