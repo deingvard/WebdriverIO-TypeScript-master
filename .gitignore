@@ -3,3 +3,4 @@ node_modules
 # Reports section
 allure-report
 allure-results
+/package-lock.json

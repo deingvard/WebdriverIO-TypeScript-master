@@ -1,8 +1,10 @@
 import { expect } from 'chai';
-import { loginSteps } from '../steps/LoginSteps';
+import { LoginSteps } from '../steps/LoginSteps';
 let testData = require('../test-data/herokuapp-data');
 
 describe('E2E Tests', () => {
+	let loginSteps = new LoginSteps();
+
 	beforeEach(() => {
 		loginSteps.init();
 	});

@@ -14,9 +14,9 @@ export class LoginSteps {
 	/**
 	 * Enter data on the Herokuapp page
 	 */
-	public enterLoginForm(data1, data2) {
-		this.loginPage.enterUserName(data1);
-		this.loginPage.enterPassword(data2);
+	public enterLoginForm(login, password) {
+		this.loginPage.enterUserName(login);
+		this.loginPage.enterPassword(password);
 	}
 
 	/**
@@ -27,5 +27,3 @@ export class LoginSteps {
 		browser.url('/login');
 	}
 }
-
-export const loginSteps = new LoginSteps();
